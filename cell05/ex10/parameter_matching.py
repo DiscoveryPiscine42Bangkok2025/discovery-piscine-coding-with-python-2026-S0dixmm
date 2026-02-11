@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+# เช็คว่าที่ input เข้ามา มันตรงกับที่เราตั้งไว้มั้ย
+import sys
+
+if len(sys.argv) != 2:
+    print("none")
+else:
+    param = sys.argv[1]
+
+    user_input = input("What was the parameter? ")
+
+    if user_input == param:
+        print("Good job!")
+    else:
+        print("Nope, sorry...")
